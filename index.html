@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Class Picker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' -25, 'opsz' 20;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="container">
+        <section class="app-hero">
+          <article class="app-card">
+            <p class="text-sm weight-bold mb-2">Clases seleccionadas</p>
+            <textarea class="output-box" data-output readonly></textarea>
+
+            <div class="toolbar mt-4">
+              <button class="btn btn-primary" type="button" data-copy="classes">
+                Copiar clases
+              </button>
+              <button class="btn btn-soft" type="button" data-copy="html">
+                Copiar HTML
+              </button>
+              <button class="btn btn-soft" type="button" data-clear>
+                Limpiar
+              </button>
+            </div>
+
+            <p class="text-sm weight-bold mt-5 mb-2">HTML generado</p>
+            <textarea class="output-box" data-html-output readonly></textarea>
+          </article>
+        </section>
+
+        <section class="app-card mb-6">
+          <div class="toolbar">
+            <input
+              class="search-input mt-4"
+              type="search"
+              placeholder="Buscar clase: flex, grid, text, bg, p-4..."
+              data-search
+            />
+          </div>
+          <!--
+          <div class="preview-box">
+            <p class="text-sm weight-bold mb-3">Vista previa básica</p>
+            
+            <div data-preview-target>
+              <strong>Elemento de prueba</strong>
+              <p>
+                Las clases seleccionadas se aplican aquí para revisar
+                rápidamente el resultado.
+              </p>
+            </div>
+            
+          </div>
+          -->
+          <textarea id="frameworkCss" style="display: none">
+          css
+        </textarea
+          >
+        </section>
+
+        <p class="tittle">Elementos html:</p>
+        <div id="htmlElements" class="class-grid-html"></div>
+        <p class="tittle">Clases CSS:</p>
+        <section class="class-grid" data-class-container></section>
+      </section>
+    </main>
+
+    <div class="floating-actions">
+      <button class="btn">
+        <a
+          href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:palette:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23e3e3e3"
+          target="blank"
+        >
+          <span class="material-symbols-outlined" style="font-size: 30px">
+            apps
+          </span>
+        </a>
+      </button>
+
+      <button class="btn">
+        <a href="https://fonts.google.com" target="blank">
+          <span class="material-symbols-outlined" style="font-size: 30px">
+            brand_family
+          </span>
+        </a>
+      </button>
+
+      <button class="btn">
+        <a href="https://cssgradient.io" target="blank">
+          <span class="material-symbols-outlined" style="font-size: 30px">
+            colors
+          </span>
+        </a>
+      </button>
+      <button class="btn" type="button" data-copy="html">
+        <span class="material-symbols-outlined" style="font-size: 30px">
+          check_circle
+        </span>
+      </button>
+      <button class="btn" type="button" data-clear>
+        <span class="material-symbols-outlined" style="font-size: 30px">
+          clear_all
+        </span>
+      </button>
+
+      <button id="copyCssBtn" class="btn">
+        <span class="material-symbols-outlined" style="font-size: 30px">
+          palette
+        </span>
+      </button>
+
+      <button id="copyHtmlBtn" class="btn">
+        <span class="material-symbols-outlined" style="font-size: 30px">
+          code
+        </span>
+      </button>
+    </div>
+
+    <div class="toast" data-toast></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
