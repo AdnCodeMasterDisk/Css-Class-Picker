@@ -929,7 +929,7 @@ const FRAMEWORK_CSS = `
 }
 
 .w-30 {
-  width: 30%;
+  width: 33.33%;
 }
 
 .w-40 {
