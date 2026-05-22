@@ -1262,11 +1262,7 @@
     flex-direction: column;
   }
 
-  .mobile-grid-2,
-  .mobile-grid-3,
-  .mobile-grid-4,
-  .mobile-grid-6,
-  .mobile-grid-8 {
+  .mobile-grid {
     grid-template-columns: 1fr;
   }
 
