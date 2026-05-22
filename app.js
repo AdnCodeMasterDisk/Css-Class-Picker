@@ -1935,7 +1935,7 @@ const FRAMEWORK_CSS = `
   }
 
   .container {
-    width: min(100% - 24px, var(--container));
+    width: 95%;
   }
 
   .text-xs {
@@ -1955,6 +1955,46 @@ const FRAMEWORK_CSS = `
   }
   .text-2xl {
     font-size: var(--text-2xl-mobile);
+  }
+
+  .w-10 {
+    width: 100%;
+  }
+
+  .w-20 {
+    width: 100%;
+  }
+
+  .w-30 {
+    width: 100%;
+  }
+
+  .w-40 {
+    width: 100%;
+  }
+
+  .w-50 {
+    width: 100%;
+  }
+
+  .w-60 {
+    width: 100%;
+  }
+
+  .w-70 {
+    width: 100%;
+  }
+
+  .w-80 {
+    width: 100%;
+  }
+
+  .w-90 {
+    width: 100%;
+  }
+
+  .w-100 {
+    width: 100%;
   }
 }
 
