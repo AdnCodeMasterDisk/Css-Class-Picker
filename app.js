@@ -32,9 +32,6 @@ const CLASS_GROUPS = [
     classes: [
       'w-auto',
       'w-full',
-      'w-half',
-      'w-third',
-      'w-two-third',
       'w-screen',
       'w-10',
       'w-20',
@@ -918,15 +915,7 @@ const FRAMEWORK_CSS = `
 .w-full {
   width: 100%;
 }
-.w-half {
-  width: 50%;
-}
-.w-third {
-  width: 33.333%;
-}
-.w-two-third {
-  width: 66.666%;
-}
+
 .w-screen {
   width: 100vw;
 }
