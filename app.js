@@ -920,6 +920,46 @@ const FRAMEWORK_CSS = `
   width: 100vw;
 }
 
+.w-10 {
+  width: 10%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
 /* min / max width */
 .min-w-0 {
   min-width: 0;
@@ -943,6 +983,7 @@ const FRAMEWORK_CSS = `
 .container {
   width: min(100% - 32px, var(--container));
   margin-inline: auto;
+  min-height: 70px;
 }
 
 /* text align */
@@ -1971,6 +2012,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 
 `;
 
