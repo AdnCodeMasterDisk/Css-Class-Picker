@@ -247,15 +247,7 @@
 .w-full {
   width: 100%;
 }
-.w-half {
-  width: 50%;
-}
-.w-third {
-  width: 33.333%;
-}
-.w-two-third {
-  width: 66.666%;
-}
+
 .w-screen {
   width: 100vw;
 }
